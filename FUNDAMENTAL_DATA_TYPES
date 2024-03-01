@@ -1,0 +1,115 @@
+                                                             =========================================
+                                                                             DATA TYPES
+                                                             =========================================
+   In python we have 14 data types,based on data type the PVM can allocates the memory-space for variables.
+   They are:=
+  -------------
+                 1.Fundamental Data Types.
+                       *int
+                       *float
+                       *bool
+                       *complex
+                 2.Fundamental Data Types.
+                       *list
+                       *tuple
+                       *set
+                       *frozenset
+                       *dict
+                 3.String Data Types.
+                       *str
+                 3.Other Data Types.
+                       *bytes
+                       *bytearray
+                       *range
+                       *None
+                                                                =============================
+                                                                  1.Fundamental Data Types:=
+                                                                 =============================
+--------------
+  *INT:=
+--------------
+* In python "int" is an pre_defined class.
+* all binary , octal and hexadecimal values also stored in the form of "int" variable.
+* size of int data type is 2bytes (or) 4bytes based on device.
+---------
+  ex:=
+---------
+#we can store binary , octal and hexadecimal numbers in "int" only.it is possible in only python.
+      1.binary_number=0b111
+        print(binary_number)--------------> o/p:7
+        print(type(binary_number))--------------> o/p:<class 'int'>
+      2.octal_number=0o721
+        print(octal_number)--------------> o/p:465
+        print(type(octal_number))--------------> o/p:<class 'int'>
+      3.hexadecimal_number=0x67Adc
+        print(octal_number)--------------> o/p:424668
+        print(type(hexadecimal_number))--------------> o/p:<class 'int'>
+      4.a=4436
+        print("value={}\ntype={}\naddress={}".format(a,type(a),id(a)))--------------> o/p:value=4436
+                                                                                          type=<class 'int'>
+                                                                                          address=1669760495632
+--------------
+  *FLOAT:=
+--------------
+* In python "float" is an pre_defined class.
+*The decimal pointed values are called floats in python.
+* size of int data type is 4bytes based on device.
+*It stores single value only.
+---------
+  ex:=
+---------
+            1.a=10.207543
+              print("value={}\ntype={}\naddress={}".format(a,type(a),id(a)))---------------------> o/p:value=10.207543
+                                                                                                       type=<class 'float'>
+                                                                                                       address=1669760489040
+
+--------------
+  *BOOL:=
+--------------
+* In python "BOOL" is an pre_defined class.
+*"BOOL" is used to store True and False values,,the 1st latter of True value always be capital. similary False value also
+* internally True equavalent value is "1".
+* internally False equavalent value is "0".
+---------
+  ex:=
+---------
+          1.a=True
+            print("value={}\ntype={}".format(a,type(a)))---------------------------> o/p: value=True
+                                                                                          type=<class 'bool'>
+          2.a=True
+            b=False
+            c=True
+            print(a+b)---------------> o/p: 1
+            print(a+c)---------------> o/p: 2
+            print(a*b)---------------> o/p: 0
+--------------
+  *COMPLEX:=
+--------------
+* In python "COMPLEX" is an pre_defined class.
+* general format a+bj (or) a-bj
+      a=real aprt
+      b=imaginary part
+*"COMPLEX" is used to store COMPLEX values,It denoted with "j" (or) "J"
+                       -------------
+                          syntax:-        varname=real_part + (or) -  imaginary_part j (or) J.
+                        -------------
+* "real" and "imag" is an pre_defined attributes used to print real part and imaginary part of complex number.
+                    * complex_variable_name.real
+                    * complex_variable_name.imag
+---------
+  ex:=
+---------
+             1.a=2+3j
+               print(a)---------------------> o/p: (2+3j)
+               print(type(a))--------------------> o/p: <class 'complex'>
+            2.a=2-67J
+              print("real part of variable={}\nimaginary part={}".format(a.real,a.imag))--------------------------> o/p: real part of variable=2.0
+                                                                                                                         imaginary part=-67.0
+           3.a=2.5+7.9j
+             b=3.3-28.294j
+             print(a+b)--------------------> o/p: (5.8-20.394j)
+             print(a-b)--------------------> o/p:(-0.7999999999999998+36.194j)
+             print(a*b)--------------------> o/p: (231.7726-44.665j)
+
+
+
