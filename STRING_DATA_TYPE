@@ -1,0 +1,58 @@
+                                                                          ==================================
+                                                                                  STRING DATA TYPE
+                                                                          ===================================
+=> It is one of sequential data type.
+=> it is used to store group of character(s) in a single variable.
+---------------------
+=> it is 2 types:=
+----------------------
+                 * SINGLE LINED STRING DATA.
+                 * MULTI LINED STRING DATA.
+=================================
+ * SINGLE LINED STRING DATA :=
+ ================================
+ => It is enclosed with single or double qoutes.
+  -------------
+    SYNTAX:=     var_name="string" (or) 'string'
+  -------------
+=> ex:
+---------
+     1.a="welcome to python world"
+       print(a)-------------------------> o/p: welcome to python world
+       print(type(a))---------------------------->o/p: <class 'str'>
+     2.b='python'
+      print(b)--------------------------> o/p: python
+      print(type(b))---------------------> o/p: <class 'str'>
+=> with SINGLE LINED STRING DATA we cann't organize multi lined string data.
+=================================
+ * MULTI LINED STRING DATA :=
+ ================================
+ => It is enclosed with threeple single or double qoutes.
+  -------------
+    SYNTAX:=     var_name="""string""" 
+                          (or) 
+                var_name='''string'''
+  -------------
+=> ex:
+---------
+     1.a="""welcome to python world"""
+       print(a)-------------------------> o/p: welcome to python world
+       print(type(a))---------------------------->o/p: <class 'str'>
+     2.b='''python'''
+      print(b)--------------------------> o/p: python
+      print(type(b))---------------------> o/p: <class 'str'>
+=> with SINGLE LINED STRING DATA we can organize multi lined string data.
+=> with we can store multi strings as well as single lined strings also.
+     3.c='''a'''
+       print(c)-------------------->o/p: a
+--------------------------------------------------------------------------------x-------------------------------------------------------------------------------------------------------
+                                                           ================================
+                                                                OPERATION ON STRINGS
+                                                           ===============================
+                  ***We can perform 2 types of operations on string
+                  ***they are:=
+                         1.indexing.
+                         2.slicing.
+===========================
+  INDEXING ON STRINGS:=
+===========================
