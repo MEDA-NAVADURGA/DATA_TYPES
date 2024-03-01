@@ -41,7 +41,7 @@
      2.b='''python'''
       print(b)--------------------------> o/p: python
       print(type(b))---------------------> o/p: <class 'str'>
-=> with SINGLE LINED STRING DATA we can organize multi lined string data.
+=> with MULTI LINED STRING DATA we can organize SINGLE LINED STRING DATA.
 => with we can store multi strings as well as single lined strings also.
      3.c='''a'''
        print(c)-------------------->o/p: a
