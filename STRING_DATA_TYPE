@@ -56,3 +56,50 @@
 ===========================
   INDEXING ON STRINGS:=
 ===========================
+       1.accessing the sing value from given string is called indexing. 
+       2.it is divide into 2 types.
+         they are:
+              1.FORWARD INDEXING.
+              2.BACKWARD INDEXING.
+--------------------------
+  1.FORWARD INDEXING:=
+--------------------------
+      1.In This type of indexing the index values starts with 0 and this values are always positive.
+      2.
+            string="python"
+                 
+
+            forward indexing(left to right)
+         ------------------------------------>
+          |-----------------------------------|
+          |  0    1     2    3     4    5     |
+          |-----------------------------------|
+          |  p    y     t     h    o    n     |
+          |-----------------------------------|
+ ============
+     ex:=
+=============
+       1.s="python"
+        print(s[0])----------------->o/p: p
+        print(s[3])-------------------->o/p: h
+--------------------------------
+2. 2.BACKWARD INDEXING:=
+--------------------------------
+      1.In This type of indexing the index values starts with 0 and this values are always positive.
+      2.
+            string="python"
+                 
+
+            backward direction(right to left)
+         <<------------------------------------
+          |-----------------------------------|
+          | -6   -5    -4   -3    -2   -1     |
+          |-----------------------------------|
+          |  p    y     t     h    o    n     |
+          |-----------------------------------|
+ ============
+     ex:=
+=============
+       1.s="python"
+        print(s[-1])----------------->o/p: n
+        print(s[-5])-------------------->o/p: y
