@@ -82,8 +82,9 @@
        1.s="python"
         print(s[0])----------------->o/p: p
         print(s[3])-------------------->o/p: h
+        print(s[-7])-------------------->o/p: IndexError: string index out of range
 --------------------------------
-2. 2.BACKWARD INDEXING:=
+    2.BACKWARD INDEXING:=
 --------------------------------
       1.In This type of indexing the index values starts with 0 and this values are always positive.
       2.
@@ -97,9 +98,79 @@
           |-----------------------------------|
           |  p    y     t     h    o    n     |
           |-----------------------------------|
- ============
+=============
      ex:=
 =============
        1.s="python"
         print(s[-1])----------------->o/p: n
         print(s[-5])-------------------->o/p: y
+===============================================================================================X==========================================================================================
+
+----------------------
+    SLICING:=
+----------------------
+            1.Accessing a range of characters/sub_string from given string is called slicing.
+            _________________________________________________________
+              1)  SYNTAX_1 : strobj[ starting index : end index ]
+            _________________________________________________________  
+                =======> above syntax returns a sub_string from specified index to (end index-1)th.
+                ------------
+                    ex:
+                ------------
+                         1.s="python"
+                           print(s[1:3])-------------------->o/p: yt
+                           print(s[0:4])-------------------->o/p: pyth
+            _________________________________________________________
+              2)  SYNTAX_2 : strobj[ starting index : ]
+            _________________________________________________________  
+              ======> above syntax returns a sub_string from specified index to end of the string.
+              =======> Above syntax defaultly takes "length of string" as end index
+                ------------
+                    ex:
+                ------------
+                        1. string="hi python" #space also considered as a character so space also has some index value as '2' .
+                           print(string[2:])------------------->o/p: python
+                           print(string[6:])------------------->o/p: hon
+            _________________________________________________________
+              3)  SYNTAX_3 : strobj[  : end index ]
+            _________________________________________________________  
+              ======> above syntax returns a sub_string from starting of string to (end index_1) of the string.
+              =======> Above syntax defaultly takes "0" as start index
+                ------------
+                    ex:
+                ------------
+                        1. string="hi python" #space also considered as a character so space also has some index value as '2' .
+                           print(string[:4])------------------->o/p:  hi p
+                           print(string[:6])------------------->o/p:  hi pyt
+            _________________________________________________________
+              4)  SYNTAX_4 : strobj[ : ]
+            _________________________________________________________  
+              ======> above syntax returns a total string.
+              =======> Above syntax defaultly takes "0" as start index and "length of the string" as end index.
+                ------------
+                    ex:
+                ------------
+                        1. string="NARASARAOPETA ENGINEERING COLLEGE"
+                           print(string[:])------------------->o/p: NARASARAOPETA ENGINEERING COLLEGE 
+            __________________________________________________________________
+              5)  SYNTAX_5 : strobj[ start index : end index : step value ]
+            __________________________________________________________________
+              ======> above syntax returns a sub_string from specified start index to end index with respect to step value.
+              ------------------------------------------------------------------------------------------------------------------------------------------------------
+                CASE_1:  if the step value is positive , we can get the sub_string from starting index to end index-1 by providing ( starting index < end index ).
+              ------------------------------------------------------------------------------------------------------------------------------------------------------
+                    ex:
+                 ==========
+                        1.string="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                          print(string[0:len(string):2])------------------->o/p: ACEGIKMOQSUWY
+                          print(string[6:len(string):3]) ------------------->o/p: GJMPSVY
+            ---------------------------------------------------------------------------------------------------------------------------------------------------------
+                CASE_2 :  if the step value is negative , we can get the sub_string from starting index to end index+1 by providing ( starting index > end index ).
+            ---------------------------------------------------------------------------------------------------------------------------------------------------------
+                    ex:
+                 ==========
+                        1.string="abcdefghijklmnopqrstuvwxyz"
+                          print(string[4:1:-1]) ------------------->o/p: edc
+                          print(string[::-1]) ------------------->o/p: zyxwvutsrqponmlkjihgfedcba
+                          print(string[:23:-2]) ------------------->o/p: z
+                          print(string[16::-2]) ------------------->o/p: qomkigeca
