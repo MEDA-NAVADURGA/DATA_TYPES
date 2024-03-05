@@ -5,111 +5,363 @@
 ==============
 capitalize():=
 ==============
-          Converts the first character to upper case.
+       Converts the first character to upper case.
+                   =========================================================
+                          SYNTAX:string.capitalize()
+                    =========================================================
+       EX:-txt = "hello, and welcome to my world."
+              x = txt.capitalize()
+              print (x)---------------------->O/P: Hello, and welcome to my world.
 ==============
 casefold():=
 ==============
           Converts string into lower case.
+                   =========================================================
+                          SYNTAX:string.casefold()
+                    =========================================================
+          EX:txt = "Hello, And Welcome To My World!"
+             x = txt.casefold()-------------->O/P: banana
+             print(x)
 ==============
 center():=
 ==============
           Returns a centered string.
+                   =========================================================
+                          SYNTAX:string.center(length, character)
+                    =========================================================
+           EX:txt = "banana"
+              x = txt.center(20)
+              print(x)------------------->O/P:      banana  
 ==============
 count():=
 ==============
           Returns the number of times a specified value occurs in a string.
+                   =========================================================
+                          SYNTAX:string.count(value, start, end)
+                    =========================================================
+          EX:txt = "I love apples, apple are my favorite fruit"
+             x = txt.count("apple")
+             print(x)------------------->O/P:2
 ==============
 encode():=
 ==============
           Returns an encoded version of the string.
-          EX:-txt = "hello, and welcome to my world."
-              x = txt.capitalize()
-              print (x)---------------------->O/P: Hello, and welcome to my world.
+                   =========================================================
+                     SYNTAX:string.encode(encoding=encoding, errors=errors)
+                    =========================================================
+          EX:txt = "My name is Ståle"
+             x = txt.encode()
+             print(x)------------------->O/P: b'My name is St\xc3\xe5le'
 ==============
 endswith():=
 ==============
         Returns true if the string ends with the specified value.
+                   =========================================================
+                          SYNTAX:string.endswith(value, start, end)
+                    =========================================================
+        EX:txt = "Hello, welcome to my world."
+           x = txt.endswith(".")
+           print(x)------------------->O/P: True
 ==============
 expandtabs():=
 ==============
         Sets the tab size of the string.
+                   =========================================================
+                          SYNTAX:string.expandtabs(tabsize)
+                    =========================================================
+        EX:txt = "H\te\tl\tl\to"
+           x =  txt.expandtabs(2)
+           print(x)------------------->O/P: H e l l o
 ==============
 find():=
 ==============
         Searches the string for a specified value and returns the position of where it was found.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
+        EX: txt = "Hello, welcome to my world."
+            x = txt.find("welcome")
+            print(x)------------------->O/P: 7
 ==============
 format():=
 ==============
         Formats specified values in a string.
+                   =========================================================
+                          SYNTAX:string.format(value1, value2...)
+                    =========================================================
+        EX: txt = "For only {price:.2f} dollars!"
+            print(txt.format(price = 49))------------------->O/P: For only 49.00 dollars!
 ==============
 format_map():=
 ==============
          Formats specified values in a string.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
 ==============
 index()	:-
 ==============
-        Searches the string for a specified value and returns the position of where it was found
+        Searches the string for a specified value and returns the position of where it was found.
+                   =========================================================
+                          SYNTAX:string.index(value, start, end)
+                    =========================================================
+        EX: txt = "Hello, welcome to my world."
+            x = txt.index("welcome")
+            print(x)------------------->O/P: 7
 ==============
-isalnum()
+isalnum():-
 ==============
-        Returns True if all characters in the string are alphanumeric
+        Returns True if all characters in the string are alphanumeric.
+                   =========================================================
+                          SYNTAX:string.isalnum()
+                    =========================================================
+        EX:txt = "Company12"
+          x = txt.isalnum()
+          print(x)------------------->O/P: True
 ==============
-isalpha()	
+isalpha():-
 ==============
-       Returns True if all characters in the string are in the alphabet
+       Returns True if all characters in the string are in the alphabet.
+                   =========================================================
+                          SYNTAX:string.isalpha()
+                    =========================================================
+        EX: txt = "CompanyX"
+            x = txt.isalpha()
+            print(x)------------------->O/P: True
 ==============
-isascii()
+isascii():-
 ==============
-      Returns True if all characters in the string are ascii characters
+      Returns True if all characters in the string are ascii characters.
+                   =========================================================
+                          SYNTAX:string.isascii()
+                    =========================================================
+        EX: txt = "Company123"
+            x = txt.isascii()
+            print(x)------------------->O/P: True
+
 ==============
-isdecimal()	
+isdecimal():-
 ==============
-      Returns True if all characters in the string are decimals
+      Returns True if all characters in the string are decimals.
+                   =========================================================
+                          SYNTAX:string.isdecimal()
+                    =========================================================
+        EX: txt = "1234"
+            x = txt.isdecimal()
+            print(x)------------------->O/P: True
 ==============
-isdigit()	
+isdigit():-
 ==============
-      Returns True if all characters in the string are digits
+      Returns True if all characters in the string are digits.
+                   =========================================================
+                          SYNTAX:string.isdigit()
+                    =========================================================
+        EX: txt = "50800"
+            x = txt.isdigit()
+            print(x)------------------->O/P: True
 ==============
-isidentifier()	
+isidentifier():-
 ==============
-      Returns True if the string is an identifier
+      Returns True if the string is an identifier.
+                   =========================================================
+                          SYNTAX:string.isidentifier()
+                    =========================================================
+        EX: txt = "Demo"
+            x = txt.isidentifier()
+            print(x)------------------->O/P: True
 ==============
-islower()
+islower():-
 ==============
-      Returns True if all characters in the string are lower case
+      Returns True if all characters in the string are lower case.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
 ==============
-isnumeric()	
+isnumeric():-
 ==============
-      Returns True if all characters in the string are numeric
+      Returns True if all characters in the string are numeric.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
 ==============
-isprintable()	
+isprintable():-
 ==============
-      Returns True if all characters in the string are printable
+      Returns True if all characters in the string are printable.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
 ==============
-isspace()
+isspace():-
 ==============
-      Returns True if all characters in the string are whitespaces
+      Returns True if all characters in the string are whitespaces.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
 ==============
-istitle()	
+istitle():-
 ==============
-     Returns True if the string follows the rules of a title
+     Returns True if the string follows the rules of a title.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
 ==============
-isupper()
+isupper():-
 ==============
-     Returns True if all characters in the string are upper case
+     Returns True if all characters in the string are upper case.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
 ==============
-join()	
+join():-
 ==============
-      Converts the elements of an iterable into a string
-ljust()	Returns a left justified version of the string
-lower()	Converts a string into lower case
-lstrip()	Returns a left trim version of the string
-maketrans()	Returns a translation table to be used in translations
-partition()	Returns a tuple where the string is parted into three parts
-replace()	Returns a string where a specified value is replaced with a specified value
-rfind()	Searches the string for a specified value and returns the last position of where it was found
-rindex()	Searches the string for a specified value and returns the last position of where it was found
-rjust()	Returns a right justified version of the string
-rpartition()	Returns a tuple where the string is parted into three parts
-rsplit()	Splits the string at the specified separator, and returns a list
-rstrip()	Returns a right trim version of the string
+      Converts the elements of an iterable into a string.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
+==============
+ljust():-
+==============
+      Returns a left justified version of the string.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
+==============
+lower():-
+==============
+      Converts a string into lower case.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
+==============
+lstrip():-
+==============
+   Returns a left trim version of the string.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
+==============
+maketrans():-
+==============
+    Returns a translation table to be used in translations.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
+==============
+partition():-
+==============
+     Returns a tuple where the string is parted into three parts.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
+==============
+replace():-
+==============
+     Returns a string where a specified value is replaced with a specified value.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
+==============
+rfind():-
+============== 
+     Searches the string for a specified value and returns the last position of where it was found.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
+==============
+rindex():-
+==============
+     Searches the string for a specified value and returns the last position of where it was found.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
+==============
+rjust():-
+==============
+     Returns a right justified version of the string.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
+==============
+rpartition():-
+============== 
+      Returns a tuple where the string is parted into three parts.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
+==============
+rsplit():-
+==============
+      Splits the string at the specified separator, and returns a list.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
+==============
+rstrip():-
+==============
+     Returns a right trim version of the string.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
+==============
+split():-
+==============
+     Splits the string at the specified separator, and returns a list.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
+==============
+splitlines():-
+==============
+     Splits the string at line breaks and returns a list.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
+==============
+startswith():-
+==============
+      Returns true if the string starts with the specified value.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
+==============
+strip():-
+==============
+      Returns a trimmed version of the string.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
+==============
+swapcase():-
+==============
+      Swaps cases, lower case becomes upper case and vice versa.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
+==============
+title():-
+==============
+      Converts the first character of each word to upper case.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
+==============
+translate():-
+==============
+      Returns a translated string.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
+==============
+upper():-
+==============
+      Converts a string into upper case.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
+==============
+zfill():-
+==============
+     Fills the string with a specified number of 0 values at the beginning.
+                   =========================================================
+                          SYNTAX:string.find(value, start, end)
+                    =========================================================
