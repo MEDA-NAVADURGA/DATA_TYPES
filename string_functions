@@ -174,194 +174,280 @@ islower():-
 ==============
       Returns True if all characters in the string are lower case.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                          SYNTAX:string.islower()
                     =========================================================
+         ex:txt = "hello world!"
+            x = txt.islower()
+            print(x)------------------->O/P: True
 ==============
 isnumeric():-
 ==============
       Returns True if all characters in the string are numeric.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                           SYNTAX:string.isnumeric()
                     =========================================================
-==============
+         ex:txt = "565543"
+            x = txt.isnumeric()
+            print(x)------------------->O/P: True
+==============------------------->O/P: True
 isprintable():-
 ==============
       Returns True if all characters in the string are printable.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                          SYNTAX:string.isprintable()
                     =========================================================
+         ex:txt = "Hello! Are you #1?"
+            x = txt.isprintable()
+            print(x)------------------->O/P: True
 ==============
 isspace():-
 ==============
       Returns True if all characters in the string are whitespaces.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                          SYNTAX:string.isspace()
                     =========================================================
+         ex:txt = "   s   "
+            x = txt.isspace()
+            print(x)------------------->O/P: False
 ==============
 istitle():-
 ==============
      Returns True if the string follows the rules of a title.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
-                    =========================================================
+                          SYNTAX:string.istitle()
+                    =========================================================\
+          ex: txt = "Hello, And Welcome To My World!"
+              x = txt.istitle()
+              print(x)------------------->O/P: True
 ==============
 isupper():-
 ==============
      Returns True if all characters in the string are upper case.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                          SYNTAX:string.isupper()
                     =========================================================
+       EX: txt = "THIS IS NOW!"
+           x = txt.isupper()
+           print(x)------------------->O/P: True
 ==============
 join():-
 ==============
       Converts the elements of an iterable into a string.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                          SYNTAX:string.join(iterable)
                     =========================================================
+      EX: myDict = {"name": "John", "country": "Norway"}
+          mySeparator = "TEST"
+          x = mySeparator.join(myDict)
+          print(x)------------------->O/P: nameTESTcountry
 ==============
 ljust():-
 ==============
       Returns a left justified version of the string.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                          SYNTAX:string.ljust(length, character)
                     =========================================================
+      EX: txt = "banana"
+           x = txt.ljust(20)
+           print(x, "is my favorite fruit.")------------------->O/P:   banana              is my favorite fruit.
 ==============
 lower():-
 ==============
       Converts a string into lower case.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                          SYNTAX:string.lower()
                     =========================================================
+      EX: txt = "Hello my FRIENDS"
+          x = txt.lower()
+          print(x)------------------->O/P: hello my friends
 ==============
 lstrip():-
 ==============
    Returns a left trim version of the string.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                          SYNTAX:string.lstrip(characters)
                     =========================================================
+      EX: txt = "     banana     "
+          x = txt.lstrip()
+          print("of all fruits", x, "is my favorite")------------------->O/P: of all fruits banana     is my favorite
 ==============
 maketrans():-
 ==============
     Returns a translation table to be used in translations.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                          SYNTAX:str.maketrans(x, y, z)
                     =========================================================
+      EX: txt = "Hello Sam!"
+          mytable = str.maketrans("S", "P")
+          print(txt.translate(mytable))------------------->O/P: Hello Pam!
 ==============
 partition():-
 ==============
      Returns a tuple where the string is parted into three parts.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                          SYNTAX:string.partition(value)
                     =========================================================
+      EX: txt = "I could eat bananas all day"
+          x = txt.partition("bananas")
+          print(x)------------------->O/P: ('I could eat ', 'bananas', ' all day')
 ==============
 replace():-
 ==============
      Returns a string where a specified value is replaced with a specified value.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                        SYNTAX:string.replace(oldvalue, newvalue, count)
                     =========================================================
+      EX: txt = "I like bananas"
+          x = txt.replace("bananas", "apples")
+          print(x)------------------->O/P: I like apples
 ==============
 rfind():-
 ============== 
      Searches the string for a specified value and returns the last position of where it was found.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                          SYNTAX:string.rfind(value, start, end)
                     =========================================================
+      EX: txt = "Mi casa, su casa."
+          x = txt.rfind("casa")
+          print(x)------------------->O/P: 12
 ==============
 rindex():-
 ==============
      Searches the string for a specified value and returns the last position of where it was found.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                          SYNTAX:string.rindex(value, start, end)
                     =========================================================
+      EX: txt = "Mi casa, su casa."
+          x = txt.rindex("casa")
+          print(x)------------------->O/P: 12
 ==============
 rjust():-
 ==============
      Returns a right justified version of the string.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                          SYNTAX:string.rjust(length, character)
                     =========================================================
+      EX: txt = "banana"
+          x = txt.rjust(20)
+          print(x, "is my favorite fruit.")------------------->O/P:               banana is my favorite fruit.
 ==============
 rpartition():-
 ============== 
       Returns a tuple where the string is parted into three parts.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                          SYNTAX:string.rpartition(value)
                     =========================================================
+      EX: txt = "I could eat bananas all day, bananas are my favorite fruit"
+          x = txt.rpartition("bananas") 
+          print(x)------------------->O/P: ('I could eat bananas all day, ', 'bananas', ' are my favorite fruit')
 ==============
 rsplit():-
 ==============
       Splits the string at the specified separator, and returns a list.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                          SYNTAX:string.rsplit(separator, maxsplit)
                     =========================================================
+      EX: txt = "apple, banana, cherry"
+          x = txt.rsplit(", ")
+          print(x)------------------->O/P: ['apple', 'banana', 'cherry']
 ==============
 rstrip():-
 ==============
      Returns a right trim version of the string.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                          SYNTAX:string.rstrip(characters)
                     =========================================================
+      EX:-txt = "     banana     "
+          x = txt.rstrip()
+          print("of all fruits", x, "is my favorite")------------------->O/P: of all fruits     banana is my favorite
 ==============
 split():-
 ==============
      Splits the string at the specified separator, and returns a list.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                          SYNTAX:string.split(separator, maxsplit)
                     =========================================================
+      EX: txt = "welcome to the jungle"
+          x = txt.split()
+          print(x)------------------->O/P: ['welcome', 'to', 'the', 'jungle']
 ==============
 splitlines():-
 ==============
      Splits the string at line breaks and returns a list.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                          SYNTAX:string.splitlines(keeplinebreaks)
                     =========================================================
+      EX: txt = "Thank you for the music\nWelcome to the jungle"
+          x = txt.splitlines()
+          print(x)------------------->O/P: ['Thank you for the music', 'Welcome to the jungle']
 ==============
 startswith():-
 ==============
       Returns true if the string starts with the specified value.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                          SYNTAX:string.startswith(value, start, end)
                     =========================================================
+      EX: txt = "Hello, welcome to my world."
+          x = txt.startswith("Hello")
+          print(x)------------------->O/P: True
 ==============
 strip():-
 ==============
       Returns a trimmed version of the string.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                          SYNTAX:string.strip(characters)
                     =========================================================
+      EX: txt = "     banana     "
+          x = txt.strip()
+          print("of all fruits", x, "is my favorite")------------------->O/P: of all fruits banana is my favorite
 ==============
 swapcase():-
 ==============
       Swaps cases, lower case becomes upper case and vice versa.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                          SYNTAX:string.swapcase()
                     =========================================================
+      EX: txt = "Hello My Name Is PETER"
+          x = txt.swapcase()
+          print(x)------------------->O/P: hELLO mY nAME iS peter
 ==============
 title():-
 ==============
       Converts the first character of each word to upper case.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                          SYNTAX:string.title()
                     =========================================================
+      EX: txt = "Welcome to my world"
+          x = txt.title()
+          print(x)------------------->O/P: Welcome To My World
 ==============
 translate():-
 ==============
       Returns a translated string.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                          SYNTAX:string.translate(table)
                     =========================================================
+      EX: #use a dictionary with ascii codes to replace 83 (S) with 80 (P):
+          mydict = {83:  80}
+          txt = "Hello Sam!"
+          print(txt.translate(mydict))------------------->O/P: Hello Pam!
 ==============
 upper():-
 ==============
       Converts a string into upper case.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                          SYNTAX:string.upper()
                     =========================================================
+      EX: txt = "Hello my friends"
+          x = txt.upper()
+          print(x)------------------->O/P: HELLO MY FRIENDS
 ==============
 zfill():-
 ==============
      Fills the string with a specified number of 0 values at the beginning.
                    =========================================================
-                          SYNTAX:string.find(value, start, end)
+                          SYNTAX:string.zfill(len)
                     =========================================================
+      EX: txt = "50"
+          x = txt.zfill(10)
+          print(x)------------------->O/P: 0000000050
